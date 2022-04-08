@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        html {
+            font-size: 10px;
+        }
+        body {
+            font-size: 16px;
+        }
+        div {
+            border: 2px solid gray;
+        }
+        .root {
+            /* em: 자기 자신의 폰트사이즈 대비 */
+            /* rem: html 폰트 사이즈 대비 */
+            /* 800px */
+            width: 50em; /* 50 X 20 = 1000px */
+            width: 50rem; /* 50 X 10 = 500px */
+            font-size: 20px;
+        }
+        .parent {
+            width: 50%;
+        }
+        .child {
+            width: 50%;
+        }
+
+        p{
+            border: 2px solid red;
+            padding: 15px;
+            line-height: 1.5;
+            width: 25em;
+            font-size: 20px;
+        }
+
+        p > strong {
+            color: red;
+            font-size: 1.1em;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- .root>.parent>.child*2 -->
+    <div class="root">Root
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>
+        정당은 그 <strong>목적·조직과</strong> 활동이 민주적이어야 하며, 국민의 정치적 의사형성에 참여하는데 필요한 조직을 가져야 한다. 재산권의 행사는 공공복리에 적합하도록 하여야 한다. 민주평화통일자문회의의 조직·직무범위 기타 필요한 사항은 법률로 정한다. 대통령은 국무회의의 의장이 되고, 국무총리는 부의장이 된다.
+
+대통령은 제4항과 제5항의 규정에 의하여 확정된 법률을 지체없이 공포하여야 한다. 제5항에 의하여 법률이 확정된 후 또는 제4항에 의한 확정법률이 정부에 이송된 후 5일 이내에 대통령이 공포하지 아니할 때에는 국회의장이 이를 공포한다. 모든 국민은 학문과 예술의 자유를 가진다. 대통령은 법률에서 구체적으로 범위를 정하여 위임받은 사항과 법률을 집행하기 위하여 필요한 사항에 관하여 대통령령을 발할 수 있다.
+
+대통령은 내우·외환·천재·지변 또는 중대한 재정·경제상의 위기에 있어서 국가의 안전보장 또는 공공의 안녕질서를 유지하기 위하여 긴급한 조치가 필요하고 국회의 집회를 기다릴 여유가 없을 때에 한하여 최소한으로 필요한 재정·경제상의 처분을 하거나 이에 관하여 법률의 효력을 가지는 명령을 발할 수 있다.
+
+언론·출판에 대한 허가나 검열과 집회·결사에 대한 허가는 인정되지 아니한다. 국가는 전통문화의 계승·발전과 민족문화의 창달에 노력하여야 한다. 국무위원은 국무총리의 제청으로 대통령이 임명한다. 대통령후보자가 1인일 때에는 그 득표수가 선거권자 총수의 3분의 1 이상이 아니면 대통령으로 당선될 수 없다.
+
+대법원과 각급법원의 조직은 법률로 정한다. 국회의원이 회기전에 체포 또는 구금된 때에는 현행범인이 아닌 한 국회의 요구가 있으면 회기중 석방된다. 국가는 재해를 예방하고 그 위험으로부터 국민을 보호하기 위하여 노력하여야 한다. 예비비는 총액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다.
+
+    </p>
+
+</body>
+
+</html>

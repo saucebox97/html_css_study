@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        section h1{
+            background: #abcdef;
+            width: 550px;
+            border-bottom: 5px solid #123456;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 15px 0;
+        }
+        section .title{
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        section .title h2{
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+        section{
+            border: 4px double #123456;
+            width: 550px; 
+            margin: 50px auto;
+        }
+        /* 구동방식상안됌 구동방식이 
+        섹션에 라스트찰드찾고 타이틀찾음 */
+        section .title:last-child
+        {
+            border-top: 1px dotted #123456;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <section>
+        <h1>속 담 풀 이</h1>
+        <div class="title">
+            <h2>말 한마디에 천냥 빚 갚는다.</h2>
+            <p>생각해보지 않고 나오는대로 말하다가
+                실수하면 상대의 마음에 아픔을 남기게 된다.
+            </p>
+        </div>
+        <div class="title">
+            <h2>웃는 얼굴에 침 못 뱉는다.</h2>
+            <p>호의적인 의사소통 방법은 자기 말만
+                하는 것보다 좋은 결과로 이어진다.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>
