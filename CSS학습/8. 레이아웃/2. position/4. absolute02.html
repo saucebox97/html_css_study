@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .root {
+            width: 600px;
+            height: 500px;
+            border: 4px dashed orange;
+            padding: 100px;
+            font-size: 30px;
+            /* 기본값인 static 값빼고 다른 아무거나 걸면 root기준으로 이동함 */
+            position: relative;
+        }
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 4px dashed blue;
+            padding: 50px;
+            /* position은 제일가까운 부모 기준 */
+            position: relative;
+        }
+        .child {
+            width: 120px;
+            height: 80px;
+            border: 4px dashed red;
+            background: tomato;
+            /* border-radius 테두리 둥글게 */
+            border-radius: 10px;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .abs {
+            /* absolute은 절대적 브라우저기준 2에게썻으니 3은 2자리를 차지함 */
+            position: absolute;
+            top: 50px;
+            right: 30px;
+        }
+        .center-box {
+            /* 박스 x, y축 중앙정렬 외우면 좋음*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="root">
+        <div class="parent">
+            <div class="child center-box">1</div>
+            <div class="child abs">2</div>
+            <div class="child">3</div>
+        </div>
+    </div>
+
+</body>
+</html>
