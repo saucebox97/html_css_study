@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+
+    <style>
+        body {
+            border: 2px solid #000;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            font-weight: 700;
+            font-size: 50px;
+            border: 2px solid #000;
+            padding: 20px 0 20px;
+        }
+        .container {
+            border: 2px solid #000;
+            height: 150px;
+            margin: 20px 0 20px;
+            text-align: center;
+            padding-top: 20px;
+            position: relative;
+        }
+        .container .sidemenu {
+            border: 2px solid #000;
+            height: 50px;
+            width: 20%;
+            line-height: 50px;
+            position: absolute;
+            left: 10px;
+            top: 60px;
+        }
+        .container .content {
+            border: 2px solid #000;
+            height: 50px;
+            width: 50%;
+            line-height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .container .banner {
+            border: 2px solid #000;
+            height: 50px;
+            width: 20%;
+            line-height: 50px;
+            position: absolute;
+            right: 10px;
+            top: 60px;
+        }
+        /* line-height와 height크기가똑같으면 세로중앙이다 */
+        footer {
+            border: 2px solid #000;
+            padding: 20px 0 20px;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <header>header</header>
+    <div class="container">
+        container
+        <ul class="sidemenu">sidemenu</ul>
+        <ul class="content">content</ul>
+        <ul class="banner">banner</ul>
+    </div>
+    <footer>footer</footer>
+
+</body>
+</html>

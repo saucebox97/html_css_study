@@ -9,34 +9,65 @@
 
     <style>
 
-        .A {
-            background: blue;
-            float: left;
-            width: 30%;
-            height: 100%;
+        header {
+            width: 20%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        header .gnb {
+            width: 150px;
+            position: absolute;
+            top: 130px;
+            left: 50px;
+        }
+        header .gnb li {
+            background: rgb(20, 24, 231);
+            margin-bottom: 5px;
+            padding: 3px;
+        }
+        header .gnb li a {
+            color: #fff;
+            font-size: 17px;
+            padding-right: 700;
+            text-decoration: none;
+        }
+        .container {
+            background: lightgray;
+            height: 1500px;
+            width: 80%;
+            margin-left: 20%;
+        }
+        footer {
+            background: black;
+            padding: 50px 0 50px 40px;
+        }
+        footer address {
+            color: #fff;
+            font-size: 17px;
         }
 
-
-        .clearfix::after{
-            content: '';
-            display: block;
-            float: both;
-        }
     </style>
 
 </head>
 <body>
     
-    <nav class="A clearfix">  
-        <ul>
-            <li>COMPANY</li>
-            <li>PRODUCT</li>
-            <li>SERVICE</li>
-            <li>COMMUNITY</li>
-        </ul>
-    </nav>
-    <nav class="B"></nav>
-    <footer> Allright Reserved.</footer>
+    <header>
+        <nar>
+            <ul class="gnb">
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">PRODUCT</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">COMMUNITY</a></li>
+            </ul>
+        </nar>
+    </header>
+    <div class="container">
+        <p>본문내용~~</p>
+    </div>
+    <footer>
+        <address>Copyright Allright Reserved.</address>
+    </footer>
 
 </body>
 </html>

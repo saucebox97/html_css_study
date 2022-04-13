@@ -1,0 +1,123 @@
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+body {
+    font-family: '굴림', Gulim, serif;
+    background: gray;
+}
+header h1 {
+    font-size: 100px;
+    color: white;
+    background: orange;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+header h2 {
+    font-size: 18px;
+    color: white;
+    background: orange;
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+header h3 {
+    font-size: 16px;
+    background: lightgray;
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+}
+.container .title1 {
+    background: white;
+    /* margin-left: 10%; */
+    width: 20%;
+    float: left;
+    box-sizing: border-box;
+}
+.container .title1 li:first-child {
+    background: red;
+    padding: 10px;
+    color: white;
+    font-weight: 700;
+}
+.container .title1 li:nth-child(n+2) {
+    color: black;
+    font-weight: 700;
+    padding: 10px;
+    
+}
+.container .title2 {
+    float: left;
+    width: 60%;
+    background: lightgray;
+}
+.container .title2 h4 {
+    font-size: 20px;
+    font-weight: 700;
+    background: blue;
+    padding: 10px;
+    margin: 10px;
+}
+.container .title2 h4 a {
+    color: #fff;
+    text-decoration: none;
+    /* margin-left: 25%; */
+}
+.container .title2 div {
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
+    padding: 10px;
+}
+.container .title2 p {
+    font-size: 20px;
+    color: blue;
+    padding: 20px;
+}
+.container .title3 {
+    float: left;
+    width: 20%;
+}
+.container .title3 .t1 {
+    font-size: 18px;
+    font-weight: 700;
+    color: gray;
+    text-decoration: underline;
+    padding: 10px;
+}
+.container .title3 .t2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: orange;
+    text-decoration: underline;
+    padding-left: 10px;
+}
+.container .title3 .t3 {
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px;
+}
+.container .title3 p:nth-child(2n+4) {
+    font-weight: 700;
+    color: black;
+    margin-top: 10px;
+}
+.container .title3 p:nth-child(n+3) {
+    padding-left: 10px;
+}
+
+footer {
+    height: 10px;
+    background: blue;
+    margin: 0 10% 0;
+}
